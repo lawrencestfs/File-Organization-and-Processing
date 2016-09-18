@@ -1,5 +1,5 @@
 /*
-  * File Name: 	Convertr.c
+  * File Name: 	Converter.c
   * Author: Lawrence Fernandes
   * This program reads an input.txt file containing numbers,
   * convert them to different numerical bases and

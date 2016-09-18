@@ -1,9 +1,9 @@
 /*
   * File Name: 	Conversor.c
   * Author: Lawrence Fernandes
-  * This program reads a input.txt file containing numbers,
+  * This program reads an input.txt file containing numbers,
   * convert them to different numerical bases and
-  * writes the result in a output.txt file.
+  * writes the result in an output.txt file.
   */
 
 // Imports

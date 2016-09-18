@@ -15,4 +15,4 @@ This is an example to be used with the Conversor programs.
 
 # diagram-conversor.png
 
-This is a graphical representation of the functionality of the COnverter programs.
+This is a graphical representation of the functionality of the Converter.c program. The object oriented aproach from the Java version differs a little bit.

@@ -3,7 +3,7 @@ Collection of algorithms related to file organization and processing.
 
 # Converter.c
 
-This was a exercise for the discipline of File Organization and Processing. The program reads an "input.txt" file containing two columns. The first column of the input file specifies the numeral system, while the second specifies the number that must be converted. After reading the file, the program converts the numbers to other numeral systems (binary, decimal and hexadecimal) and writes the result in an "output.txt" file. The program and the input file must be on the same folder/directory.
+This was an exercise for the discipline of File Organization and Processing. The program reads an "input.txt" file containing two columns. The first column of the input file specifies the numeral system, while the second specifies the number that must be converted. After reading the file, the program converts the numbers to other numeral systems (binary, decimal and hexadecimal) and writes the result in an "output.txt" file. The program and the input file must be on the same folder/directory.
 
 # FileIO.java and Converter.java 
 

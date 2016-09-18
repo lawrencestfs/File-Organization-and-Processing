@@ -1,10 +1,10 @@
-/*
+/**
   * File Name: 	FileIO.java
   * Author: Lawrence Fernandes
   * This class reads an input.txt file containing numbers,
   * and calls the Conversor.java class to convert them to different numerical bases.
   * The results are written in an output.txt file.
-  */
+ */
 
 //package conversor; 
 

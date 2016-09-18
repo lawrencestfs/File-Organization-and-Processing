@@ -11,7 +11,7 @@ These Java classes does the same thing of the C program forementioned. The FileI
 
 # input.txt
 
-This is an example to be used with the Conversor programs.
+This is an example to be used with the Converter programs (works with both C and Java versions).
 
 # diagram-conversor.png
 

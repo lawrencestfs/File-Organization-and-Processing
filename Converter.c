@@ -1,5 +1,5 @@
 /*
-  * File Name: 	Conversor.c
+  * File Name: 	Convertr.c
   * Author: Lawrence Fernandes
   * This program reads an input.txt file containing numbers,
   * convert them to different numerical bases and
@@ -14,7 +14,7 @@
 
 // Global Variables
 #define MAX_ALG 7 // Set the maximum size for each number to be read.
-#define NUM_AMT 10 // Set amount of numbers to be read and converted.
+#define NUM_AMT 10 // Set amount of numbers to be read and convert.
 #define STRLEN 2048 // Statement of the size of the buffer used for conversion.
 
 typedef struct this_number {
@@ -28,7 +28,7 @@ typedef struct parser {
 	char num_read[(4 * MAX_ALG) + 1];
 } copia;
 
-char* converte(unsigned long long int number, int base) {
+char* Convert(unsigned long long int number, int base) {
         static char buffer[STRLEN];
 	const char *digits = "0123456789ABCDEF";
 
@@ -65,19 +65,19 @@ int main() {
 		if(test[j].base == 2) {
 			strcpy(values[j].binary, test[j].num_read);
 			values[j].decimal = strtoull(test[j].num_read, (char **)NULL, 2);
-			strcpy(values[j].hexadecimal, converte(values[j].decimal,16));
+			strcpy(values[j].hexadecimal, Convert(values[j].decimal,16));
 		}
 
 		if(test[j].base == 10) {
 			values[j].decimal = strtoull(test[j].num_read, (char **)NULL, 10);
-			strcpy(values[j].binary, converte(values[j].decimal,2));
-			strcpy(values[j].hexadecimal, converte(values[j].decimal,16));
+			strcpy(values[j].binary, Convert(values[j].decimal,2));
+			strcpy(values[j].hexadecimal, Convert(values[j].decimal,16));
 		}
 
 		if(test[j].base == 16) {
 			strcpy(values[j].hexadecimal, test[j].num_read);
 			values[j].decimal = strtoull(test[j].num_read, (char **)NULL, 16);
-			strcpy(values[j].binary, converte(values[j].decimal,2));
+			strcpy(values[j].binary, Convert(values[j].decimal,2));
 		}
     	        printf("%s\t%llu\t%s\n", values[j].hexadecimal, values[j].decimal, values[j].binary);
 	}

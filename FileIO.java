@@ -36,14 +36,14 @@ public class FileIO {
 				lista.add(s);
 			}
 			br.close();
-
+			
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage());
-
+			
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-
+		
 		List<String> listaConvertida = Conversor.converte(lista);
 		
 		try {
@@ -51,15 +51,15 @@ public class FileIO {
 			//OutputStreamWriter osw = new OutputStreamWriter(os);
 			//BufferedWriter bw = new BufferedWriter(osw);
 			FileWriter charectersname = new FileWriter("output.txt");
-		    BufferedWriter out = new BufferedWriter(charectersname);
-		    
+			BufferedWriter out = new BufferedWriter(charectersname);
+			
 			for(int i = 0; i<listaConvertida.size(); i++) {
 				String str = listaConvertida.get(i); 
 				out.write(str);
 				out.newLine();
 			}
 			out.close();
-
+			
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}

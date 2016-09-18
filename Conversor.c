@@ -18,7 +18,7 @@
 #define STRLEN 2048 // Statement of the size of the buffer used for conversion.
 
 typedef struct this_number {
-    char hexadecimal[MAX_ALG + 1];
+        char hexadecimal[MAX_ALG + 1];
 	unsigned long long int decimal;
 	char binary[(4 * MAX_ALG) + 1];
 } number;
@@ -29,7 +29,7 @@ typedef struct parser {
 } copia;
 
 char* converte(unsigned long long int number, int base) {
-  static char buffer[STRLEN];
+        static char buffer[STRLEN];
 	const char *digits = "0123456789ABCDEF";
 
 	buffer[STRLEN-1] = 0; // To mark the end of the string.
@@ -79,7 +79,7 @@ int main() {
 			values[j].decimal = strtoull(test[j].num_read, (char **)NULL, 16);
 			strcpy(values[j].binary, converte(values[j].decimal,2));
 		}
-    	printf("%s\t%llu\t%s\n", values[j].hexadecimal, values[j].decimal, values[j].binary);
+    	        printf("%s\t%llu\t%s\n", values[j].hexadecimal, values[j].decimal, values[j].binary);
 	}
 	
 	FILE *out = fopen("output.txt", "w");
@@ -94,5 +94,5 @@ int main() {
 	}
     
 	fclose(out);
-	return 0;
+	ret
 }

@@ -94,5 +94,5 @@ int main() {
 	}
     
 	fclose(out);
-	ret
+	return 0;
 }

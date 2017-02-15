@@ -1,6 +1,6 @@
 /*
   * File Name: 	Converter.c
-  * Author: Lawrence Fernandes
+  * Authors: Lawrence Fernandes & Vanessa Cavalcanti
   * This program reads an input.txt file containing numbers,
   * convert them to different numerical bases and
   * writes the result in an output.txt file.
